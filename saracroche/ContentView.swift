@@ -79,14 +79,12 @@ struct ContentView: View {
             .foregroundColor(.white)
             .cornerRadius(8)
           }
-
-          Text("Supprimer la liste de blocage")
-            .foregroundColor(.blue)
-            .underline()
-            .padding()
-            .onTapGesture {
-              viewModel.removeBlockerList()
-            }
+          Button("Supprimer la liste de blocage") {
+            removeBlockerList()
+          }
+          .foregroundColor(.blue)
+          .underline()
+          .padding()
         } else {
           Button("Installer la liste de blocage") {
             viewModel.reloadBlockerListExtension()
