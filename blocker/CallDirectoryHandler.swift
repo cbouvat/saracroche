@@ -51,7 +51,7 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
 
     context.removeAllBlockingEntries()
     context.removeAllIdentificationEntries()
-    
+
     print("Successfully reset all numbers list")
   }
 
